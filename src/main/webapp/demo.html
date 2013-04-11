@@ -1,0 +1,42 @@
+<!doctype html>
+<html style="height: 100%; margin: 0; padding: 0;" lang="en">
+<head>
+    <link rel="stylesheet" href="css/jquery-ui-accordion.css" />
+</head>
+<body style="height: 99%;  margin: 0; padding: 0;">
+<div ng-app="demo" style="height: 100%">
+    <div accordion refresh-debounce-threshold="100">
+        <h3>Pane 1</h3>
+        <div>
+            <div ng-controller="pane1Controller">
+
+                <p ng-repeat="helloWorld in helloWorlds">{{ helloWorld }}</p>
+
+            </div>
+        </div>
+        <h3>Pane 2</h3>
+        <div>
+            <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+                Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+                faucibus interdum tellus libero ac justo.</p>
+        </div>
+        <h3>Pane 3</h3>
+        <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/jquery-ui-accordion.js"></script>
+    <script src="js/lib/angular.js"></script>
+    <script src="js/angular-jquery-ui-accordion-1.0.0.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
